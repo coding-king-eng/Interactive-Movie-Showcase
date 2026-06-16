@@ -1,0 +1,176 @@
+<!-- HTML  :  Hyper  Text Markup Language -->
+
+<!-- "<>" => Angular Brackets -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Page</title>
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header> <!--Semantic Tag-->
+        <h1 class="topHdng" onclick="switchScreen()">Movie Page</h1>
+    </header>
+
+    <section id="page-1">
+        <img class="poster-bg" src="https://tse1.mm.bing.net/th/id/OIP.xsgCbz1LFtFOeZd3p8yZuAEsDh?pid=Api&P=0&h=180"
+            alt="ALTA">
+    </section>
+
+    <section id="page-2">
+        <section class="sec-1">
+            <!-- Heading Tags -->
+            <h2>Give Rating to the Movie</h2>
+            <h3>Here's the Movie Cards List:</h3>
+
+            <ul type="circle">
+                <li>
+                    <h4>Don</h4>
+                </li>
+                <li>
+                    <h4>Salaar</h4>
+                </li>
+            </ul>
+
+            <ol type="a">
+                <li>
+                    <h4>KGF</h4>
+                </li>
+                <li>
+                    <h4>Dhurandhar</h4>
+                </li>
+            </ol>
+
+            <h5>Reviews Shared Below:</h5>
+            <h6>Lorem ipsum dolor sit, amet consectetur adipisic ing elit. Quisquam totam temporibus doloremque aliquam
+                dignissimos accusamus ducimus laborum facilis ut fugiat iste ipsam a voluptate itaque quaerat adipisci
+                inventore
+                eveniet, non commodi possimus! Temporibus rem ratione natus molestias deleniti ullam sunt quidem
+                repellendus
+                corrupti perspiciatis autem, facilis maxime neque fugit mollitia id obcaecati error. Iure explicabo eum
+                animi
+                molestias. </h6>
+
+            <hr>
+        </section>
+
+
+        <!-- Sectioning Tags -->
+
+        <section class="cards-container">
+            <div class="card-container">
+                <div class="card">
+                    <!-- Media Tags -->
+                    <img class="poster1" src="https://i.pinimg.com/736x/7e/62/fa/7e62fa7022f0925579f8949d1e84758d.jpg">
+
+
+                    <!-- Content tag -->
+                    <h2>Movie: SALAAR</h2>
+                    <P>Cast: Prabhas....</P> <!--//16px font-size by default -->
+
+
+                </div>
+
+                <div class="card">
+
+                    <!-- Media Tags -->
+                    <img class="movie-poster"
+                        src="https://m.media-amazon.com/images/S/pv-target-images/0978dc3775492a124027b21df5153ab61b4c90cc518cbe126ebb3769d34640d5.jpg">
+
+                    <!-- Content tag -->
+                    <h2>Movie: KGF</h2>
+                    <P>Cast: Yash....</P> <!--//16px font-size by default -->
+
+                </div>
+
+                <div class="card">
+
+                    <!-- Media Tags -->
+                    <img class="movie-poster"
+                        src="https://img.nowrunning.com/content/movie/2025/dhura-31080/bg4_dhurandhar.jpg">
+
+                    <!-- Content tag -->
+                    <h2>Movie: Dhurandhar</h2>
+                    <P>Cast: Ranveer Singh....</P> <!--//16px font-size by default -->
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="links-section">
+            <div class="links-container">
+                <span class="links">
+                    <button class="sbtn"><a
+                            href="https://www.youtube.com/watch?v=HihakYi5M2I&pp=ygUOc2FsYWFyIHRyYWlsZXI%3D"
+                            target="_blank">Trailer for Salaar</a></button>
+                </span>
+                <span class="links">
+                    <button class="kbtn"><a href="https://www.youtube.com/watch?v=JKa05nyUmuQ&pp=ygULa2dmIHRyYWlsZXI%3D"
+                            target="_blank">Trailer for KGF</a></button>
+                </span>
+                <span class="links">
+                    <button class="dbtn"><a
+                            href="https://www.youtube.com/watch?v=BKOVzHcjEIo&pp=ygUSZGh1cmFuZGhhciB0cmFpbGVy"
+                            target="_blank">Trailer for Dhurandhar</a></button>
+                </span>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <section class="form section-3 last-section" id="FeedbackForm">
+            <h4>Review Form : </h4>
+            <button onclick="closeFeedback()">x</button>
+            <form>
+                <label>Name : </label>
+                <input type="text" placeholder="Enter Name">
+                <br>
+
+                <label>Age : </label>
+                <input type="number" placeholder="Enter Age">
+                <br>
+
+                <label>DOB : </label>
+                <input type="date" placeholder="Enter DOB">
+                <br>
+
+
+                <label>Time of Reg. : </label>
+                <input type="time" placeholder="Time of Reg.">
+                <br>
+
+                <label>Review : </label>
+                <textarea></textarea>
+                <br>
+
+                <button>Submit</button>
+
+
+            </form>
+        </section>
+
+        
+    </section>
+
+    <br><br>
+    <button id="fillfdbckBtn" onclick=" showFeedbackForm()">Fill The Feedback</button>
+    <br><br>
+
+    <footer>
+        &copy; Specialised for Training Purpose.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
